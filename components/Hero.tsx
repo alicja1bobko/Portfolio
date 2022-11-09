@@ -12,8 +12,8 @@ const Hero = (props: Props) => {
     delaySpeed: 2000,
   });
   return (
-    <div className="h-screen w-screen  flex flex-col space-y-3 items-center justify-center text-center overflow-hidden">
-      <BackgroundCircles />
+    <div className="h-screen w-screen  flex flex-col space-y-3 items-center justify-center text-center overflow-hidden ">
+      {/* <BackgroundCircles /> */}
       <img
         src="https://media-exp1.licdn.com/dms/image/D4D03AQGSJOFfTI9uOQ/profile-displayphoto-shrink_800_800/0/1666013036629?e=1672272000&v=beta&t=QBNtknbeAyqFzTzkV4K4c8qB0_AQHQjX471hpBr308A"
         alt="profile pic"

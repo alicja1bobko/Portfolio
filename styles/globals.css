@@ -7,6 +7,13 @@
     html:focus-within{
         @apply scroll-smooth
     }
+    *,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 }
 
 @layer components {
@@ -19,5 +26,9 @@
     .contactInput {
         @apply outline-none bg-slate-400/10 rounded-sm border-b px-6 py-4 border-[#242424] text-gray-500 placeholder-gray-500 transition-all focus:border-[#F7AB0A]/40 focus:text-[#F7AB0A]/40
     }
+
+    /* .scrollElement{
+        @apply absolute h-[3000px] w-[100px] top-0 z-0 
+    } */
     
 }

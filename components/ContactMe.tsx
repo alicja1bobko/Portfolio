@@ -8,8 +8,9 @@ type Inputs = {
   subject: string;
   message: string;
 };
+type Props = {};
 
-const ContactMe = (props: Inputs) => {
+const ContactMe = ({}: Props) => {
   const { register, handleSubmit } = useForm<Inputs>();
 
   const onSubmit: SubmitHandler<Inputs> = (formData) =>
