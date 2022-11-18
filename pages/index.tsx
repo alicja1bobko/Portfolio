@@ -22,7 +22,7 @@ const Home: NextPage = () => {
 
   return (
     // <div className="bg-[rgb(36,36,36)] h-screen text-white snap-y snap-proximity overflow-y-scroll overflow-x-hidden z-0 scroll-smooth scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/70">
-    <div className=" bg-[rgb(36,36,36)] text-white overflow-x-hidden z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/70">
+    <div className="bg-[rgb(36,36,36)] text-white overflow-x-hidden z-0">
       <Head>
         <title>Aliz's stuff</title>
         <meta name="description" content="Portfolio" />

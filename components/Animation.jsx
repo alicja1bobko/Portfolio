@@ -98,40 +98,41 @@ const Animation = () => {
 
   return (
     <>
-    <div
-      ref={ref}
-      style={{
-        backgroundImage: `url(${gradient.src})`,
-      }}
-      className="min-h-[100vh] relative translate-y-[-88px] object-cover bcg"
-    >
       <div
-        className="absolute"
-        style={{ top: "0px", left: "-200px", zIndex: 5 }}
+        ref={ref}
+        style={{
+          backgroundImage: `url(${gradient.src})`,
+        }}
+        className="min-h-[100vh] relative translate-y-[-88px] object-cover bcg "
       >
-        <Image className="hill_left " src={hill_left} objectFit="cover" />
-      </div>
+        <div
+          className="absolute top-[35%] xxs:top-[35%] xs:top-[35%] sm:top-[33%] md:top-[30%] lg:top-[5%] xl:top-0 2xl:top-[-7%] 3xl:top-[0%]"
+          style={{ left: "-200px", zIndex: 5 }}
+        >
+          <Image className="hill_left " src={hill_left} objectFit="cover" />
+        </div>
 
-      <div className="absolute " style={{ right: " -200px", zIndex: 4 }}>
-        <Image className="hill_right" src={hill_right} objectFit="cover" />
-      </div>
+        <div
+          className="absolute top-[35%] xxs:top-[35%] xs:top-[35%] sm:top-[32%] md:top-[30%] lg:top-[5%] xl:top-0 2xl:top-[-10%] 3xl:top-[0%]"
+          style={{ right: " -200px", zIndex: 4 }}
+        >
+          <Image className="hill_right" src={hill_right} objectFit="cover" />
+        </div>
 
-      <Image
-        className="absolute foreground z-20 w-full translate-y-[350px]"
-        src={foreground}
-        objectFit="cover"
-        layout="fill"
-      />
-      <Image
-        className="absolute sun z-4 w-full translate-y-[-550px]"
-        src={sun}
-        objectFit="cover"
-        layout="fill"
-      />
-      <Image className="z-10" src={river} layout="fill" objectFit="cover" />
-     
-    </div>
-   
+        <Image
+          className="absolute foreground z-20 w-full translate-y-[350px]"
+          src={foreground}
+          objectFit="cover"
+          layout="fill"
+        />
+        <Image
+          className="absolute sun z-4 w-full translate-y-[-680px]"
+          src={sun}
+          objectFit="cover"
+          layout="fill"
+        />
+        <Image className="z-10" src={river} layout="fill" objectFit="cover" />
+      </div>
     </>
   );
 };;
