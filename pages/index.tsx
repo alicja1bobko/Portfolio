@@ -22,7 +22,7 @@ const Home: NextPage = () => {
 
   return (
     // <div className="bg-[rgb(36,36,36)] h-screen text-white snap-y snap-proximity overflow-y-scroll overflow-x-hidden z-0 scroll-smooth scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/70">
-    <div className="bg-[rgb(36,36,36)] text-white overflow-x-hidden z-0">
+    <div className="bg-slate-900 text-white overflow-x-hidden z-0">
       <Head>
         <title>Aliz's stuff</title>
         <meta name="description" content="Portfolio" />
@@ -39,7 +39,7 @@ const Home: NextPage = () => {
           <Animation />
         </section>
         {/* blending colors */}
-        <div className="translate-y-[-90px] h-96 w-full bg-gradient-to-b from-[#251e3d] to-transparent"></div>
+        <div className="translate-y-[-90px] h-[20rem] w-full bg-gradient-to-b from-[#251e3d] to-transparent"></div>
 
         <section id="hero" className="snap">
           <Hero />
