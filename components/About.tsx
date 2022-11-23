@@ -7,7 +7,7 @@ type Props = {};
 const About = (props: Props) => {
   return (
     <>
-      <h3 className="sectionHeader mt-28 pb-16 ">About</h3>
+      <h3 className="sectionHeader pb-16 ">About</h3>
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
