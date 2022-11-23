@@ -5,7 +5,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
 type Props = {
-  projects: Project[];
+  // projects: Project[];
 };
 
 const Projects = (props: Props) => {
