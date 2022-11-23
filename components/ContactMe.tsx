@@ -19,65 +19,68 @@ const ContactMe = ({}: Props) => {
     `);
 
   return (
-    <div className="h-screen relative flex flex-col text-center md:text-left md:flex-row max-w-7xl justify-evenly mx-auto items-center">
-      <h3 className="sectionHeader">Contact</h3>
+    <>
+      <h3 className="sectionHeader mt-24">Contact</h3>
+      <div className="h-screen relative flex flex-col text-center md:text-left md:flex-row max-w-7xl justify-evenly mx-auto items-center">
+        <div className="flex flex-col space-y-10">
+          <h4 className="text-4xl font-semibold text-center">
+            Wanna know something more?{" "}
+            <span className="decoration-[#F7AB0A]/50 underline">
+              Let's talk
+            </span>
+          </h4>
 
-      <div className="flex flex-col space-y-10">
-        <h4 className="text-4xl font-semibold text-center">
-          Wanna know something more?{" "}
-          <span className="decoration-[#F7AB0A]/50 underline">Let's talk</span>
-        </h4>
+          <div className="space-y-10">
+            <div className="flex items-center space-x-5 justify-center">
+              <EnvelopeIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse" />
+              <p className="text-2xl">inkantator@o2.pl</p>
+            </div>
 
-        <div className="space-y-10">
-          <div className="flex items-center space-x-5 justify-center">
-            <EnvelopeIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse" />
-            <p className="text-2xl">inkantator@o2.pl</p>
+            <div className="flex items-center space-x-5 justify-center">
+              <MapPinIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse" />
+              <p className="text-2xl">Warsaw, Poland</p>
+            </div>
           </div>
 
-          <div className="flex items-center space-x-5 justify-center">
-            <MapPinIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse" />
-            <p className="text-2xl">Warsaw, Poland</p>
-          </div>
-        </div>
-
-        <form
-          onSubmit={handleSubmit(onSubmit)}
-          className="flex flex-col space-y-2 w-fit mx-auto"
-        >
-          <div className="flex space-x-2">
+          <form
+            onSubmit={handleSubmit(onSubmit)}
+            className="flex flex-col space-y-2 w-fit mx-auto"
+          >
+            <div className="flex space-x-2">
+              <input
+                {...register("name")}
+                className="contactInput"
+                type="text"
+                placeholder="Name"
+              />
+              <input
+                {...register("email")}
+                className="contactInput"
+                type="email"
+                placeholder="Email"
+              />
+            </div>
             <input
-              {...register("name")}
+              {...register("subject")}
               className="contactInput"
               type="text"
-              placeholder="Name"
+              placeholder="Subject"
             />
-            <input
-              {...register("email")}
+            <textarea
+              {...register("message")}
               className="contactInput"
-              type="email"
-              placeholder="Email"
+              placeholder="Message"
             />
-          </div>
-          <input
-            {...register("subject")}
-            className="contactInput"
-            type="text"
-            placeholder="Subject"
-          />
-          <textarea
-            {...register("message")}
-            className="contactInput"
-            placeholder="Message"
-          />
-          <button
-            type="submit"
-            className="bg-[#F7AB0A] py-5 px-10 rounded-md text-black font-bold text-lg"
-          >
-            Submit
-          </button>
-        </form>
+            <button
+              type="submit"
+              className="bg-[#F7AB0A] py-5 px-10 rounded-md text-black font-bold text-lg"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

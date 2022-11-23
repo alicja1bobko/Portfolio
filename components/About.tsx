@@ -1,39 +1,63 @@
 import React from "react";
 import { motion } from "framer-motion";
+import aboutMedium from "../public/about-medium.jpg";
+import Image from "next/image";
 type Props = {};
 
 const About = (props: Props) => {
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      transition={{ duration: 1.5 }}
-      className="h-screen flex flex-col relative text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center"
-    >
-      <h3 className="sectionHeader">About</h3>
-      <motion.img
-        initial={{
-          x: -200,
-          opacity: 0,
-        }}
-        transition={{
-          duration: 1.2,
-        }}
-        whileInView={{ x: 0, opacity: 1 }}
-        viewport={{ once: true }}
-        src="https://i.ibb.co/zPKVkjz/Screenshot-3.png"
-        className="-mb-20 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-95 xl:w-[500px] xl:h-[600px]"
-      />
-      <div className="space-y-10">
-        <h4>some bcg</h4>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
-          accusamus fugiat repellat dicta consectetur, temporibus quidem modi
-          expedita nisi laboriosam libero. Necessitatibus, ducimus voluptas
-          veritatis sunt soluta ex nostrum itaque.
-        </p>
-      </div>
-    </motion.div>
+    <>
+      <h3 className="sectionHeader mt-28 pb-16 ">About</h3>
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1.5 }}
+        className=" gap-10 flex flex-col relative text-lg font-normal md:space-x-5 md:text-left md:flex-row max-w-7xl px-12 justify-center mx-auto  my-14  "
+      >
+        <motion.div
+          initial={{
+            x: -200,
+            opacity: 0,
+          }}
+          transition={{
+            duration: 1.5,
+          }}
+          whileInView={{ x: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          className="flex-shrink-0 w-64 h-64 md:rounded-lg md:w-64 md:h-95 xl:w-[500px] xl:h-[600px] self-center"
+        >
+          <Image
+            width={600}
+            height={600}
+            src={aboutMedium}
+            objectFit="cover"
+            className=" rounded-full md:rounded-lg md:w-64 md:h-95 xl:w-[500px] xl:h-[600px]  "
+          />
+        </motion.div>
+
+        <div className="space-y-3 text-[#a3abc3]">
+          <h4 className="text-4xl font-normal">Hello!</h4>
+          <p className="text-justify tracking-wide">
+            My name is Alicja. I'm 29 years old web developer located in Warsaw,
+            Poland. Before I dived into programming and discovered it as my new
+            passion, I've done many things which led me to this point, some of
+            them are still ongoing journeys:
+          </p>
+          <ul className="pl-2 leading-8 aboutList">
+            <li>💡 working as a Lighting Designer</li>
+            <li>🤖 studying Robotics and Electrotechnics </li>
+            <li>🎨 drawing and painting </li>
+            <li>☮️ yoga </li>
+            <li>👩‍🍳 cooking addict </li>
+            <li>🌍 ecology and living sustainable lifestyle</li>
+            <li>🐭 owner of 2 gerbils </li>
+            <li>🎸 playing classical guitar </li>
+            <li>🚴‍♀️ discovering my city from different perspective </li>
+            <li>🏊‍♀️ swimming section at the University </li>
+          </ul>
+        </div>
+      </motion.div>
+    </>
   );
 };
 

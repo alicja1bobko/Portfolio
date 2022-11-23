@@ -24,8 +24,8 @@ const Hero = (props: Props) => {
 
   return (
     <>
-      <div className="h-screen w-screen flex flex-col space-y-3 items-center justify-center text-center overflow-hidden">
-        <div className="relative mb-2">
+      <div className="w-screen flex flex-col space-y-3 items-center justify-center text-center overflow-hidden pb-32">
+        <div className="relative mb-4">
           <Image
             src={src}
             onMouseEnter={() => onPictureHover(profilePicBlack, true)}
@@ -46,11 +46,11 @@ const Hero = (props: Props) => {
         <h2 className="text-sm uppercase text-gray-500 tracking-[12px]">
           Junior Frontend <br /> Developer
         </h2>
-        <h1 className="text-4xl lg:text-6xl font-semibold mb-5">
+        <h1 className="text-4xl lg:text-7xl font-semibold mb-5">
           <span>{text}</span>
           <Cursor cursorColor="#bf665f" />
         </h1>
-        <div className="pt-5">
+        <div className="pt-5 ">
           <Link href="#about">
             <button className="heroButton">About</button>
           </Link>
