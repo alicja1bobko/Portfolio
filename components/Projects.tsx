@@ -3,6 +3,7 @@ import { projects } from "../data";
 import { Project } from "../interfaces";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import { DotProps } from "react-multi-carousel/lib/types";
 
 type Props = {
   // projects: Project[];
@@ -27,6 +28,15 @@ const Projects = (props: Props) => {
     },
   };
 
+  const CustomDot = ({ index, active, onClick }: DotProps) => {
+    return (
+      <li
+        className={`${active ? "active" : ""} slickdot`}
+        onClick={() => onClick?.()}
+      ></li>
+    );
+  };
+
   return (
     <>
       <h3 className="sectionHeader">Projects</h3>
@@ -41,23 +51,24 @@ const Projects = (props: Props) => {
         {/* <div className="relative w-full flex "> */}
         {/* Projects */}
         <Carousel
-          swipeable={false}
+          swipeable={true}
           draggable={false}
           showDots={true}
           responsive={responsive}
           ssr={true} // means to render carousel on server-side.
           infinite={true}
           keyBoardControl={true}
-          // customTransition="all .5"
-          transitionDuration={500}
+          transitionDuration={1000}
           containerClass={`w-[100%]`}
           removeArrowOnDeviceType={["tablet", "mobile"]}
-          // dotListClass="custom-dot-list-style"
+          dotListClass=""
+          customDot={<CustomDot />}
+          focusOnSelect={true}
           itemClass={``}
         >
           {projects.map((project, i) => {
             return (
-              <div className="w-screen flex-shrink-0 flex flex-col space-y-5 items-center justify-center md:p-48 h-screen">
+              <div className="w-screen flex-shrink-0 flex flex-col space-y-5 items-center justify-center md:p-20 lg:p-28 xl:p-46 h-screen p-8 ">
                 <motion.img
                   initial={{
                     y: -300,
@@ -70,7 +81,7 @@ const Projects = (props: Props) => {
                   alt={project.title}
                   className="max-w-[90%] xl:max-w-[80%] xl:max-h-[80%]"
                 />
-                <div className="space-y-8 max-w-6xl">
+                <div className="space-y-8 max-w-6xl items-center justify-center text-center">
                   <h4 className="text-4xl font-semibold text-center ">
                     {project.title}
                   </h4>
@@ -84,7 +95,7 @@ const Projects = (props: Props) => {
                     ))}
                   </div>
 
-                  <p className="text-lg md:text-left text-justify max-w-[90%] xl:max-w-[80%] ">
+                  <p className="text-lg md:text-left text-justify max-w-[90%] xl:max-w-[80%] mx-auto">
                     {project.summary}
                   </p>
                 </div>

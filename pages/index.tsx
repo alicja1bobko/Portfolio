@@ -22,7 +22,7 @@ const Home: NextPage = () => {
 
   return (
     // <div className="bg-[rgb(36,36,36)] h-screen text-white snap-y snap-proximity overflow-y-scroll overflow-x-hidden z-0 scroll-smooth scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/70">
-    <div className="bg-slate-900 text-white overflow-x-hidden z-0">
+    <div className="bg-slate-900 text-white overflow-x-hidden z-0 overflow-y-hidden">
       <Head>
         <title>Aliz's stuff</title>
         <meta name="description" content="Portfolio" />
@@ -35,11 +35,11 @@ const Home: NextPage = () => {
 
       <Header />
       <div className="wrapper">
-        <section className="" id="animation">
+        <section className="h-[120vh] overflow-visible" id="animation">
           <Animation />
         </section>
+        <div className="translate-y-[-89px] h-[25rem] w-full bg-gradient-to-b from-[#251e3d] to-transparent"></div>
         {/* blending colors */}
-        <div className="translate-y-[-90px] h-[20rem] w-full bg-gradient-to-b from-[#251e3d] to-transparent"></div>
 
         <section id="hero" className="snap">
           <Hero />

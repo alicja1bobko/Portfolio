@@ -59,7 +59,13 @@
       @apply before:content-["▹"] before:text-[#bf665f]
     }
 
+    .slickdot{
+      @apply h-[15px] w-[15px]  bg-gray-500/20 rounded-full cursor-pointer mr-2 
+    }
+    .slickdot.active {
+     @apply bg-[#7c3749] shadow-inner 
 
+}
     
 }
 
