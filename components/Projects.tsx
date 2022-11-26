@@ -5,9 +5,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { DotProps } from "react-multi-carousel/lib/types";
 
-type Props = {
-  // projects: Project[];
-};
+type Props = {};
 
 const Projects = (props: Props) => {
   const responsive = {

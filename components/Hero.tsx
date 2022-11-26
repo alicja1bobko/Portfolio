@@ -1,7 +1,6 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
-import BackgroundCircles from "./BackgroundCircles";
 import Image, { StaticImageData } from "next/image";
 import profilePic from "../public/profile-pic.png";
 import profilePicBlack from "../public/profile-pic-bw.png";
