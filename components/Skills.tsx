@@ -11,7 +11,7 @@ const Skills = (props: Props) => {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1.5 }}
-        className="flex flex-col relative text-center md:text-left xl:flex-row max-w-[2000px] xl:px-10 justify-center xl:space-y-0 mx-auto items-center mt-16 pb-16"
+        className="w-full flex flex-col relative text-center md:text-left xl:flex-row max-w-[2000px] xl:px-10 justify-center xl:space-y-0 mx-auto items-center mt-16 pb-16"
       >
         <div className="grid grid-cols-3 gap-5">
           <Skill

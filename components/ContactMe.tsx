@@ -21,9 +21,9 @@ const ContactMe = ({}: Props) => {
   return (
     <>
       <h3 className="sectionHeader mt-24">Contact</h3>
-      <div className="h-screen relative flex flex-col text-center md:text-left md:flex-row max-w-7xl justify-evenly mx-auto items-center">
-        <div className="flex flex-col space-y-10">
-          <h4 className="text-4xl font-semibold text-center">
+      <div className="h-screen  relative flex flex-col text-center md:text-left md:flex-row max-w-7xl justify-evenly mx-auto items-center">
+        <div className="flex w-screen  p-4 flex-col space-y-10">
+          <h4 className="text-3xl md:text-4xl font-semibold text-center">
             Wanna know something more?{" "}
             <span className="decoration-[#bf665f] underline">Let's talk</span>
           </h4>
@@ -31,7 +31,7 @@ const ContactMe = ({}: Props) => {
           <div className="space-y-10">
             <div className="flex items-center space-x-5 justify-center">
               <EnvelopeIcon className="text-[#bf665f] h-7 w-7 animate-pulse" />
-              <p className="text-2xl">inkantator@o2.pl</p>
+              <p className="text-2xl">bobkoalicja@gmail.com</p>
             </div>
 
             <div className="flex items-center space-x-5 justify-center">
@@ -42,18 +42,18 @@ const ContactMe = ({}: Props) => {
 
           <form
             onSubmit={handleSubmit(onSubmit)}
-            className="flex flex-col space-y-2 w-fit mx-auto"
+            className="flex flex-col space-y-2 w-full md:w-fit mx-auto"
           >
-            <div className="flex space-x-2">
+            <div className="flex space-y-2 md:space-y-0  md:space-x-2 flex-col md:flex-row">
               <input
                 {...register("name")}
-                className="contactInput"
+                className="contactInput w-full"
                 type="text"
                 placeholder="Name"
               />
               <input
                 {...register("email")}
-                className="contactInput"
+                className="contactInput w-full"
                 type="email"
                 placeholder="Email"
               />
@@ -71,7 +71,7 @@ const ContactMe = ({}: Props) => {
             />
             <button
               type="submit"
-              className="bg-[#bf665f] py-5 px-10 rounded-md text-black font-bold text-lg"
+              className="bg-[#bf665f] py-5 px-10 rounded-md text-black font-bold text-lg hover:bg-[#bf665f]/80 ease-out transition-colors"
             >
               Submit
             </button>

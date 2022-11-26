@@ -1,6 +1,7 @@
 import React from "react";
 import { SocialIcon } from "react-social-icons";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 type Props = {};
 
@@ -65,7 +66,7 @@ const Header = (props: Props) => {
           className="cursor-pointer"
         />
         <p className="uppercase hidden md:inline-flex tex-sm text-gray-400">
-          Get In Touch
+          <Link href="#contact">Get In Touch</Link>
         </p>
       </motion.div>
     </header>
