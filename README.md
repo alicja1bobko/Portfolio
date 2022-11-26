@@ -19,7 +19,7 @@ You can start editing the page by modifying `pages/index.tsx`. The page auto-upd
 
 ### Links
 
-[Live Site URL:](https://personal-portfolio-eight-steel.vercel.app/)
+[Live Site URL](https://personal-portfolio-eight-steel.vercel.app/)
 
 ## My process
 
@@ -33,7 +33,7 @@ You can start editing the page by modifying `pages/index.tsx`. The page auto-upd
 
 ### What I learned
 
-A big challenge I set to myself was the hero animation. I used the Landscape from [this](https://www.reddit.com/r/Firewatch/comments/b2n39h/firewatch_inspired_landscape/) reddit post and was inspired by wonderful [this](https://codepen.io/isladjan/pen/abdyPBw) Parallax scroll animation. 
+A big challenge I set to myself was the hero animation. I used the Landscape from [this](https://www.reddit.com/r/Firewatch/comments/b2n39h/firewatch_inspired_landscape/) reddit post and was inspired by [this](https://codepen.io/isladjan/pen/abdyPBw )wonderful Parallax scroll animation. 
 I also used Framer Motion to animate subsequent pages. It was a great way to expand my skills in Tailwind.
 
 
