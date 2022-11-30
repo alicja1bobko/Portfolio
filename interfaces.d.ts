@@ -4,6 +4,8 @@ export interface Technology {
 }
 
 export interface Project {
+  _id: string;
+  link: string;
   title: string;
   image: Image;
   summary: string;

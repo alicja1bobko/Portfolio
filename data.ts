@@ -1,5 +1,7 @@
 export let projects = [
   {
+    _id: "1project",
+    link: "https://alicja1bobko.github.io/where-in-the-world/",
     title: "Where in the World?",
     image:
       "https://raw.githubusercontent.com/alicja1bobko/where-in-the-world/main/src/assets/1.png",
@@ -32,6 +34,8 @@ export let projects = [
     ],
   },
   {
+    _id: "2project",
+    link: "https://alicja1bobko.github.io/Interactive-Card/",
     title: "Interactive card details form solution",
     image:
       "https://raw.githubusercontent.com/alicja1bobko/Interactive-Card/main/src/screenshots/errors.png",
@@ -64,6 +68,8 @@ export let projects = [
     ],
   },
   {
+    _id: "3project",
+    link: "https://alicja1bobko.github.io/Quizzical/",
     title: "Quiz Game",
     image:
       "https://raw.githubusercontent.com/alicja1bobko/Quizzical/main/src/assets/score.png",
@@ -88,6 +94,8 @@ export let projects = [
     ],
   },
   {
+    _id: "4project",
+    link: "https://alicja1bobko.github.io/Tenzies/",
     title: "Tenzies game",
     image:
       "https://raw.githubusercontent.com/alicja1bobko/Tenzies/main/src/assets/won.png",

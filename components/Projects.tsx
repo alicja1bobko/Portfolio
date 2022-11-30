@@ -4,6 +4,7 @@ import { Project } from "../interfaces";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { DotProps } from "react-multi-carousel/lib/types";
+import Link from "next/link";
 
 type Props = {};
 
@@ -63,22 +64,26 @@ const Projects = (props: Props) => {
           customDot={<CustomDot />}
           focusOnSelect={true}
           itemClass={``}
+          className={`z-10`}
         >
           {projects.map((project, i) => {
             return (
-              <div className="w-screen flex-shrink-0 flex flex-col space-y-5 items-center justify-center md:p-20 lg:p-28 xl:p-46 h-screen p-8 ">
-                <motion.img
-                  initial={{
-                    y: -300,
-                    opacity: 0,
-                  }}
-                  transition={{ duration: 1 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  src={project.image}
-                  alt={project.title}
-                  className="max-w-[90%] xl:max-w-[80%] xl:max-h-[80%]"
-                />
+              <div className="w-screen flex-shrink-0 flex flex-col space-y-5 items-center justify-center md:p-20 lg:p-28 xl:p-46 h-screen p-8 z-10">
+                <Link key={project._id} href={project.link} className="">
+                  <motion.img
+                    initial={{
+                      y: -300,
+                      opacity: 0,
+                    }}
+                    transition={{ duration: 1 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    src={project.image}
+                    alt={project.title}
+                    className="max-w-[90%] xl:max-w-[80%] xl:max-h-[80%] cursor-pointer"
+                  />
+                </Link>
+
                 <div className="space-y-8 max-w-6xl items-center justify-center text-center">
                   <h4 className="text-4xl font-semibold text-center ">
                     {project.title}
@@ -101,8 +106,7 @@ const Projects = (props: Props) => {
             );
           })}
         </Carousel>
-        {/* </div> */}
-        <div className="w-full absolute top-[30%] bg-[#bf665f]/10 left-0 h-[500px] -skew-y-12 blur-sm"></div>
+        <div className="w-full absolute top-[30%] bg-[#bf665f]/10 left-0 h-[500px] -skew-y-12 blur-sm z-0"></div>
       </motion.div>
     </>
   );
