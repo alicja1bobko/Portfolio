@@ -46,11 +46,11 @@ const About = (props: Props) => {
           <ul className="pl-2 leading-8 aboutList">
             <li>💡 working as a Lighting Designer</li>
             <li>🤖 studying Robotics and Electrotechnics </li>
+            <li>🏠 interior design </li>
             <li>🎨 drawing and painting </li>
             <li>☮️ yoga </li>
             <li>👩‍🍳 cooking addict </li>
             <li>🌍 ecology and living sustainable lifestyle</li>
-            <li>🐭 owner of 2 gerbils </li>
             <li>🎸 playing classical guitar </li>
             <li>🚴‍♀️ discovering my city from different perspective </li>
             <li>🏊‍♀️ swimming section at the University </li>

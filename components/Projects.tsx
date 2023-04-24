@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { projects } from "../data";
-import { Project } from "../interfaces";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { DotProps } from "react-multi-carousel/lib/types";
@@ -45,9 +44,6 @@ const Projects = (props: Props) => {
         transition={{ duration: 1.5 }}
         className=" relative flex flex-col md:flex-row max-w-full  mx-auto items-center z-10 "
       >
-        {/* overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20
-        scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80 */}
-        {/* <div className="relative w-full flex "> */}
         {/* Projects */}
         <Carousel
           swipeable={true}
@@ -68,7 +64,7 @@ const Projects = (props: Props) => {
         >
           {projects.map((project, i) => {
             return (
-              <div className="w-screen flex-shrink-0 flex flex-col space-y-5 items-center justify-center md:p-20 lg:p-28 xl:p-46 h-screen p-8 z-10">
+              <div className="w-screen flex-shrink-0 flex flex-col space-y-5 items-center justify-center md:p-20 lg:p-28 xl:p-46 p-8 z-10 xl:h-screen">
                 <Link key={project._id} href={project.link} className="">
                   <motion.img
                     initial={{
@@ -80,7 +76,7 @@ const Projects = (props: Props) => {
                     viewport={{ once: true }}
                     src={project.image}
                     alt={project.title}
-                    className="max-w-[90%] xl:max-w-[80%] xl:max-h-[80%] cursor-pointer"
+                    className="max-w-[90%] xl:max-w-[65%] xl:max-h-[65%] cursor-pointer"
                   />
                 </Link>
 
@@ -88,10 +84,10 @@ const Projects = (props: Props) => {
                   <h4 className="text-4xl font-semibold text-center ">
                     {project.title}
                   </h4>
-                  <div className="flex items-center space-x-2 justify-center">
+                  <div className="flex flex-wrap items-center space-x-2 justify-center">
                     {project.technologies.map((technology) => (
                       <img
-                        className="w-10 h-9"
+                        className="h-10 "
                         alt={technology.title}
                         src={technology.image}
                       />

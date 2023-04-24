@@ -16,45 +16,54 @@ const Skills = (props: Props) => {
         <div className="grid grid-cols-3 gap-5">
           <Skill
             src={"https://www.w3.org/html/logo/downloads/HTML5_Badge_512.png"}
+            scale={0.6}
             directionLeft
           />
           <Skill
             src={
               "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/800px-CSS3_logo.svg.png"
             }
+            scale={0.6}
             directionLeft
           />
           <Skill
             src={"https://www.w3schools.com/whatis/img_js.png"}
+            scale={0.6}
             directionLeft
           />
           <Skill
             src={
               "https://vm.pl/assets/media/technologie/javascript/header-typescript.svg"
             }
+            scale={0.8}
           />
           <Skill
             src={
               "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"
             }
+            scale={0.8}
           />
           <Skill
             src={"https://avatars.githubusercontent.com/u/67109815?s=280&v=4"}
+            scale={0.8}
           />
           <Skill
             src={"https://sass-lang.com/assets/img/logos/logo-b6e1ef6e.svg"}
+            scale={0.6}
             directionLeft
           />
           <Skill
             src={
               "https://greensock.com/uploads/monthly_2020_03/tweenmax.png.cf27916e926fbb328ff214f66b4c8429.png"
             }
+            scale={0.8}
             directionLeft
           />
           <Skill
             src={
               "https://seeklogo.com/images/N/next-js-icon-logo-EE302D5DBD-seeklogo.com.png"
             }
+            scale={1}
             directionLeft
           />
         </div>

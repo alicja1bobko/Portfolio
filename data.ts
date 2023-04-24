@@ -1,5 +1,53 @@
 export let projects = [
   {
+    _id: "0project",
+    link: "https://habit-tracker-tawny.vercel.app/",
+    title: "sprout",
+    image:
+      "https://raw.githubusercontent.com/alicja1bobko/Habit-Tracker/main/public/screenshots/dashboard.png",
+    summary:
+      "Sprout app helps you keep track of your habits 💪. It includes Firebase Authentication, realtime Firestore Database and allows to upload profile photo stored in Firestore Cloud. You can also sign up to a guest account with prefilled data to play around with application features - add, delete, update habits, mark as completed. Week and month progress are visualized in the calendar, week overview pie charts in the carousel. It shows you also brief statistics section with current goals, how many habits are achieved today and best streak.",
+    technologies: [
+      {
+        image: "https://www.w3.org/html/logo/downloads/HTML5_Badge_512.png",
+        title: "html5 logo",
+      },
+      {
+        image:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/800px-CSS3_logo.svg.png",
+        title: "css logo",
+      },
+      {
+        image:
+          "https://vm.pl/assets/media/technologie/javascript/header-typescript.svg",
+        title: "typescript logo",
+      },
+      {
+        image:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png",
+        title: "react logo",
+      },
+      {
+        image: "https://avatars.githubusercontent.com/u/67109815?s=280&v=4",
+        title: "tailwind logo",
+      },
+      {
+        image:
+          "https://seeklogo.com/images/N/next-js-icon-logo-EE302D5DBD-seeklogo.com.png",
+        title: "nextjs logo",
+      },
+      {
+        image:
+          "https://assets.stickpng.com/images/5847f40ecef1014c0b5e488a.png",
+        title: "firebase logo",
+      },
+      {
+        image: "https://v4.mui.com/static/logo_raw.svg",
+        title: "mui logo",
+      },
+    ],
+  },
+  {
     _id: "1project",
     link: "https://alicja1bobko.github.io/where-in-the-world/",
     title: "Where in the World?",
